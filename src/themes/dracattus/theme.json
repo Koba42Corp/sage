@@ -1,9 +1,10 @@
 {
   "name": "dracattus",
   "displayName": "Dracattus",
+  "schemaVersion": 1,
   "inherits": "dark",
   "most_like": "dark",
-  "backgroundImage": "background.jpg",
+  "backgroundImage": "background.jpg",  
 
   "colors": {
     "background": "rgba(20, 12, 8, 0.85)",
@@ -252,5 +253,20 @@
   "switches": {
     "checked": { "background": "rgba(255,105,180,0.85)" },
     "unchecked": { "background": "rgba(255,140,0,0.20)" }
+  },
+  "dialogs": {
+    "overlay": {
+      "background": "rgba(20, 0, 40, 0.70)",
+      "backdropFilter": "blur(14px) saturate(150%) brightness(0.6)",
+      "backdropFilterWebkit": "blur(14px) saturate(150%) brightness(0.6)"
+    },
+    "content": {
+      "background": "rgba(40, 20, 60, 0.55)",
+      "backdropFilter": "blur(36px) saturate(190%) brightness(0.8)",
+      "backdropFilterWebkit": "blur(36px) saturate(190%) brightness(0.8)",
+      "border": "1px solid rgba(255,105,180,0.35)",
+      "borderRadius": "18px",
+      "boxShadow": "0 28px 72px rgba(20,0,40,0.60), 0 0 0 1px rgba(255,105,180,0.25), 0 0 50px rgba(255,105,180,0.15)"
+    }
   }
 }

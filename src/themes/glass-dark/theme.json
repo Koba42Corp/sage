@@ -2,56 +2,38 @@
   "name": "glass-dark",
   "displayName": "Glass Dark",
   "inherits": "dark",
-  "most_like": "dark",
+  "mostLike": "dark",
   "backgroundImage": "background.jpg",
-
+  "schemaVersion": 1,
   "colors": {
     "background": "rgba(8, 8, 10, 0.85)",
     "foreground": "#ffffff",
-
     "card": "rgba(12, 12, 15, 0.45)",
     "cardBackdropFilter": "blur(28px) saturate(180%) brightness(0.85)",
     "cardBackdropFilterWebkit": "blur(28px) saturate(180%) brightness(0.85)",
     "cardBorder": "1px solid rgba(10,132,255,0.25)",
-
     "popover": "rgba(10, 10, 12, 0.40)",
     "popoverBackdropFilter": "blur(24px) saturate(170%) brightness(0.85)",
-    "popoverBackdropFilterWebkit": "blur(24px) saturate(170%) brightness(0.85)",
     "popoverBorder": "1px solid rgba(10,132,255,0.30)",
-
     "surface": "rgba(8, 8, 12, 0.35)",
     "surfaceBackdropFilter": "blur(20px) saturate(160%) brightness(0.85)",
-    "surfaceBackdropFilterWebkit": "blur(20px) saturate(160%) brightness(0.85)",
     "surfaceBorder": "1px solid rgba(10,132,255,0.20)",
-
     "primary": "rgba(10,132,255,0.35)",
     "primaryForeground": "#ffffff",
-
     "secondary": "rgba(255,255,255,0.08)",
     "secondaryForeground": "#ffffff",
-
     "muted": "rgba(255,255,255,0.06)",
     "mutedForeground": "#ffffff",
-
     "accent": "rgba(10,132,255,0.85)",
     "accentForeground": "#ffffff",
-
     "destructive": "rgba(255,69,58,0.80)",
     "destructiveForeground": "#ffffff",
-
     "border": "rgba(10,132,255,0.15)",
     "input": "rgba(8, 8, 12, 0.45)",
     "inputBorder": "1px solid rgba(10,132,255,0.25)",
     "inputBackground": "rgba(0,0,0, 0.6)",
-    "ring": "rgba(10,132,255,0.85)",
-
-    "chart1": "rgba(10,132,255,0.5)",
-    "chart2": "rgba(48,209,88,0.80)",
-    "chart3": "rgba(255,214,10,0.80)",
-    "chart4": "rgba(191,90,242,0.80)",
-    "chart5": "rgba(100,210,255,0.80)"
+    "ring": "rgba(10,132,255,0.85)"
   },
-
   "fonts": {
     "sans": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', system-ui, sans-serif",
     "serif": "ui-serif, Georgia, Cambria, serif",
@@ -59,7 +41,6 @@
     "heading": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif",
     "body": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif"
   },
-
   "corners": {
     "none": "0px",
     "sm": "8px",
@@ -68,7 +49,6 @@
     "xl": "18px",
     "full": "9999px"
   },
-
   "shadows": {
     "none": "none",
     "sm": "0 1px 2px rgba(0,0,0,0.20)",
@@ -80,7 +60,6 @@
     "button": "0 1px 0 rgba(255,255,255,0.10), 0 8px 16px rgba(0,0,0,0.24), 0 0 0 1px rgba(10,132,255,0.20)",
     "dropdown": "0 24px 48px rgba(0,0,0,0.45), 0 0 0 1px rgba(10,132,255,0.20), 0 0 30px rgba(10,132,255,0.10)"
   },
-
   "tables": {
     "background": "rgba(8, 8, 12, 0.25)",
     "border": "1px solid rgba(10,132,255,0.20)",
@@ -92,15 +71,13 @@
       "border": "1px solid rgba(10,132,255,0.25)",
       "fontWeight": "600",
       "fontSize": "14px",
-      "backdropFilter": "blur(18px) saturate(160%) brightness(0.9)",
-      "backdropFilterWebkit": "blur(18px) saturate(160%) brightness(0.9)"
+      "backdropFilter": "blur(18px) saturate(160%) brightness(0.9)"
     },
     "row": {
       "background": "rgba(0, 0, 0, 0.35)",
       "color": "#ffffff",
       "border": "1px solid rgba(10,132,255,0.15)",
       "backdropFilter": "blur(16px) saturate(150%) brightness(0.9)",
-      "backdropFilterWebkit": "blur(16px) saturate(150%) brightness(0.9)",
       "hover": {
         "background": "rgba(255,255,255,0.10)",
         "color": "#ffffff"
@@ -118,18 +95,14 @@
       "background": "rgba(10,132,255,0.06)",
       "color": "#e8e8ee",
       "border": "1px solid rgba(10,132,255,0.20)",
-      "backdropFilter": "blur(14px) saturate(150%) brightness(0.9)",
-      "backdropFilterWebkit": "blur(14px) saturate(150%) brightness(0.9)"
+      "backdropFilter": "blur(14px) saturate(150%) brightness(0.9)"
     }
   },
-
   "sidebar": {
     "background": "rgba(25, 15, 20, 0.35)",
     "backdropFilter": "blur(20px) saturate(180%) brightness(0.9)",
-    "backdropFilterWebkit": "blur(20px) saturate(180%) brightness(0.9)",
     "border": "rgba(10,132,255,0.20)"
   },
-
   "buttons": {
     "default": {
       "background": "linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 100%), rgba(10,132,255,0.85)",
@@ -138,7 +111,6 @@
       "borderRadius": "12px",
       "boxShadow": "0 8px 16px rgba(10,132,255,0.32)",
       "backdropFilter": "blur(18px) saturate(160%) brightness(0.95)",
-      "backdropFilterWebkit": "blur(18px) saturate(160%) brightness(0.95)",
       "hover": {
         "background": "linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 100%), rgba(10,132,255,0.95)",
         "color": "#ffffff",
@@ -159,7 +131,6 @@
       "borderRadius": "12px",
       "boxShadow": "0 2px 8px rgba(0,0,0,0.18)",
       "backdropFilter": "blur(16px) saturate(160%) brightness(0.9)",
-      "backdropFilterWebkit": "blur(16px) saturate(160%) brightness(0.9)",
       "hover": {
         "background": "rgba(10,132,255,0.10)",
         "color": "#ffffff",
@@ -180,7 +151,6 @@
       "borderRadius": "12px",
       "boxShadow": "0 2px 8px rgba(0,0,0,0.18)",
       "backdropFilter": "blur(16px) saturate(150%) brightness(0.9)",
-      "backdropFilterWebkit": "blur(16px) saturate(150%) brightness(0.9)",
       "hover": {
         "background": "rgba(255,255,255,0.12)",
         "color": "#f5f5f7",
@@ -201,7 +171,6 @@
       "borderRadius": "12px",
       "boxShadow": "0 8px 16px rgba(255,69,58,0.32)",
       "backdropFilter": "blur(16px) saturate(150%) brightness(0.9)",
-      "backdropFilterWebkit": "blur(16px) saturate(150%) brightness(0.9)",
       "hover": {
         "background": "rgba(255,59,48,0.90)",
         "color": "#ffffff",
@@ -246,11 +215,30 @@
       }
     }
   },
-
-  "buttonStyles": ["subtle-gradient", "rounded-buttons", "vibrancy"],
-
+  "buttonStyles": [
+    "rounded-buttons"
+  ],
   "switches": {
-    "checked": { "background": "rgba(10,132,255,0.85)" },
-    "unchecked": { "background": "rgba(255,255,255,0.18)" }
+    "checked": {
+      "background": "rgba(10,132,255,0.85)"
+    },
+    "unchecked": {
+      "background": "rgba(255,255,255,0.18)"
+    }
+  },
+  "dialogs": {
+    "overlay": {
+      "background": "rgba(0, 0, 0, 0.60)",
+      "backdropFilter": "blur(12px) saturate(140%) brightness(0.7)",
+      "backdropFilterWebkit": "blur(12px) saturate(140%) brightness(0.7)"
+    },
+    "content": {
+      "background": "rgba(12, 12, 15, 0.50)",
+      "backdropFilter": "blur(32px) saturate(180%) brightness(0.85)",
+      "backdropFilterWebkit": "blur(32px) saturate(180%) brightness(0.85)",
+      "border": "1px solid rgba(10,132,255,0.30)",
+      "borderRadius": "16px",
+      "boxShadow": "0 24px 64px rgba(0,0,0,0.50), 0 0 0 1px rgba(10,132,255,0.20), 0 0 40px rgba(10,132,255,0.12)"
+    }
   }
 }

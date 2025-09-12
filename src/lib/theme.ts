@@ -1356,4 +1356,20 @@ export interface Theme {
       background?: string;
     };
   };
+  // Optional theme-specific dialog configurations
+  dialogs?: {
+    overlay?: {
+      background?: string;
+      backdropFilter?: string;
+      backdropFilterWebkit?: string;
+    };
+    content?: {
+      background?: string;
+      backdropFilter?: string;
+      backdropFilterWebkit?: string;
+      border?: string;
+      borderRadius?: string;
+      boxShadow?: string;
+    };
+  };
 }

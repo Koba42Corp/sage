@@ -1,6 +1,7 @@
 {
   "name": "glass-light",
   "displayName": "Glass Light",
+  "schemaVersion": 1,
   "inherits": "light",
   "most_like": "light",
   "backgroundImage": "background.jpg",
@@ -252,5 +253,20 @@
   "switches": {
     "checked": { "background": "rgba(10,132,255,0.85)" },
     "unchecked": { "background": "rgba(0,0,0,0.18)" }
+  },
+  "dialogs": {
+    "overlay": {
+      "background": "rgba(255, 255, 255, 0.40)",
+      "backdropFilter": "blur(12px) saturate(140%) brightness(1.2)",
+      "backdropFilterWebkit": "blur(12px) saturate(140%) brightness(1.2)"
+    },
+    "content": {
+      "background": "rgba(255, 255, 255, 0.65)",
+      "backdropFilter": "blur(32px) saturate(180%) brightness(1.15)",
+      "backdropFilterWebkit": "blur(32px) saturate(180%) brightness(1.15)",
+      "border": "1px solid rgba(10,132,255,0.25)",
+      "borderRadius": "16px",
+      "boxShadow": "0 24px 64px rgba(0,0,0,0.15), 0 0 0 1px rgba(10,132,255,0.15), 0 0 40px rgba(10,132,255,0.08)"
+    }
   }
 }

@@ -16,19 +16,32 @@ const DialogClose = DialogPrimitive.Close;
 const DialogOverlay = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
->(({ className, ...props }, ref) => (
-  <DialogPrimitive.Overlay
-    ref={ref}
-    className={cn(
-      'fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
-      className,
-    )}
-    onClick={(e) => {
-      e.stopPropagation();
-    }}
-    {...props}
-  />
-));
+>(({ className, style, ...props }, ref) => {
+  const { currentTheme } = useTheme();
+
+  // Apply theme-aware overlay styles
+  const overlayStyles: React.CSSProperties = {
+    background: currentTheme?.dialogs?.overlay?.background || undefined,
+    backdropFilter: currentTheme?.dialogs?.overlay?.backdropFilter || undefined,
+    WebkitBackdropFilter: currentTheme?.dialogs?.overlay?.backdropFilterWebkit || currentTheme?.dialogs?.overlay?.backdropFilter || undefined,
+    ...style,
+  };
+
+  return (
+    <DialogPrimitive.Overlay
+      ref={ref}
+      className={cn(
+        'fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
+        className,
+      )}
+      style={overlayStyles}
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+      {...props}
+    />
+  );
+});
 DialogOverlay.displayName = DialogPrimitive.Overlay.displayName;
 
 const DialogContent = React.forwardRef<
@@ -45,6 +58,13 @@ const DialogContent = React.forwardRef<
     backgroundSize: currentTheme?.backgroundImage ? 'cover' : undefined,
     backgroundPosition: currentTheme?.backgroundImage ? 'center' : undefined,
     backgroundRepeat: currentTheme?.backgroundImage ? 'no-repeat' : undefined,
+    // Add dialog-specific theme styles
+    background: currentTheme?.dialogs?.content?.background || undefined,
+    backdropFilter: currentTheme?.dialogs?.content?.backdropFilter || undefined,
+    WebkitBackdropFilter: currentTheme?.dialogs?.content?.backdropFilterWebkit || currentTheme?.dialogs?.content?.backdropFilter || undefined,
+    border: currentTheme?.dialogs?.content?.border || undefined,
+    borderRadius: currentTheme?.dialogs?.content?.borderRadius || undefined,
+    boxShadow: currentTheme?.dialogs?.content?.boxShadow || undefined,
   };
 
   // Merge theme styles with any custom styles passed as props
